@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://open-eshop.stqa.ru/" />
+<title>LoginCoupon1</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">LoginCoupon1</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/oc-panel/auth/login/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.page-header &gt; h1</td>
+	<td>Login</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=section#page input[name='email']</td>
+	<td>demo@open-eshop.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=section#page input[type='password']</td>
+	<td>demo</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=section#page button.btn-primary</td>
+	<td></td>
+</tr>
+<!--Проверка что мы вошли в систему на страницу админа-->
+<tr>
+	<td>waitForText</td>
+	<td>id=mobile-menu-panel</td>
+	<td>Market Support Admin Support Assigned Stats Widgets Cache Cache Delete all Delete expired New Product Blog post FAQ Page <br /> Visit Site</td>
+</tr>
+</tbody></table>
+</body>
+</html>

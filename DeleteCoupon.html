@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://open-eshop.stqa.ru/" />
+<title>DeleteCoupon</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">DeleteCoupon</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/oc-panel/Coupon?name=NewDiscountCouponGG</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=i.glyphicon-trash</td>
+	<td>NewDiscountCouponGG</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.glyphicon-trash</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.sweet-alert.showSweetAlert.visible</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.showSweetAlert button.confirm</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotVisible</td>
+	<td>css=div.table-responsive &gt; table &gt; tbody &gt; tr</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<!--Проверка отсутствия наименования купона в  ячейке таблицы -->
+<tr>
+	<td>assertNotText</td>
+	<td>//div[2]/div[2]/div/div/table/tbody/tr/td</td>
+	<td>NewDiscountCouponGG</td>
+</tr>
+<!--Проверка отсутствия кнопки удаления купона-->
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>css=i.glyphicon-trash</td>
+	<td>NewDiscountCouponGG</td>
+</tr>
+</tbody></table>
+</body>
+</html>

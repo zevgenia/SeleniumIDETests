@@ -1,0 +1,448 @@
+<html>
+<head><style type='text/css'>
+body, table {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-style: italic;
+}
+
+.selected {
+    background-color: #ffffcc;
+}
+
+.status_done {
+    background-color: #eeffee;
+}
+
+.status_passed {
+    background-color: #ccffcc;
+}
+
+.status_failed {
+    background-color: #ffcccc;
+}
+
+.breakpoint {
+    background-color: #cccccc;
+    border: 1px solid black;
+}
+</style><title>Test suite results</title></head>
+<body>
+<h1>Test suite results </h1>
+
+<table>
+<tr>
+<td>result:</td>
+<td>passed</td>
+</tr>
+<tr>
+<td>totalTime:</td>
+<td>38</td>
+</tr>
+<tr>
+<td>numTestTotal:</td>
+<td>5</td>
+</tr>
+<tr>
+<td>numTestPasses:</td>
+<td>5</td>
+</tr>
+<tr>
+<td>numTestFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandPasses:</td>
+<td>8</td>
+</tr>
+<tr>
+<td>numCommandFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandErrors:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Selenium Version:</td>
+<td>2.53</td>
+</tr>
+<tr>
+<td>Selenium Revision:</td>
+<td>.1</td>
+</tr>
+<tr>
+<td>
+<table id="suiteTable" class="selenium" border="1" cellpadding="1" cellspacing="1"><tbody>
+<tr class="title status_passed"><td><b>Test Suite</b></td></tr>
+<tr class="  status_passed"><td><a href="#testresult0">LoginCoupon</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult1">CreateNewCoupon</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult2">SearchCoupon</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult3">DeleteCoupon</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult4">LogoutCoupon</a></td></tr>
+</tbody></table>
+
+
+</td>
+<td>&nbsp;</td>
+</tr>
+</table><table><tr>
+<td><a name="testresult0">LoginCoupon.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">LoginCoupon1</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/oc-panel/auth/login/</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>css=div.page-header &gt; h1</td>
+	<td>Login</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>css=section#page input[name='email']</td>
+	<td>demo@open-eshop.com</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>css=section#page input[type='password']</td>
+	<td>demo</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=section#page button.btn-primary</td>
+	<td></td>
+</tr>
+<!--&#1055;&#1088;&#1086;&#1074;&#1077;&#1088;&#1082;&#1072; &#1095;&#1090;&#1086; &#1084;&#1099; &#1074;&#1086;&#1096;&#1083;&#1080; &#1074; &#1089;&#1080;&#1089;&#1090;&#1077;&#1084;&#1091; &#1085;&#1072; &#1089;&#1090;&#1088;&#1072;&#1085;&#1080;&#1094;&#1091; &#1072;&#1076;&#1084;&#1080;&#1085;&#1072;-->
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>id=mobile-menu-panel</td>
+	<td>Market Support Admin Support Assigned Stats Widgets Cache Cache Delete all Delete expired New Product Blog post FAQ Page <br> Visit Site</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult1">CreateNewCoupon.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">CreateNewCoupon</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/oc-panel</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=span.glyphicon-th</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=i.glyphicon-tag</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=i.glyphicon-pencil</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=i.glyphicon-pencil</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>css=h1</td>
+	<td>Create coupon</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=name</td>
+	<td>NewDiscountCouponGG</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=discount_amount</td>
+	<td>15</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>sendKeys</td>
+	<td>name=valid_date</td>
+	<td>2018-03-31</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=number_coupons</td>
+	<td>10</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>name=submit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>css=h1</td>
+	<td>Coupon</td>
+</tr>
+<!--&#1055;&#1088;&#1086;&#1074;&#1077;&#1088;&#1082;&#1072; &#1087;&#1086;&#1103;&#1074;&#1083;&#1077;&#1085;&#1080;&#1103; &#1089;&#1086;&#1086;&#1073;&#1097;&#1077;&#1085;&#1080;&#1103; &#1086; &#1089;&#1086;&#1079;&#1076;&#1072;&#1085;&#1080;&#1080; &#1082;&#1091;&#1087;&#1086;&#1085;&#1072;-->
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertText</td>
+	<td>css=h4.alert-heading</td>
+	<td>Success</td>
+</tr>
+<!--&#1055;&#1088;&#1086;&#1074;&#1077;&#1088;&#1082;&#1072; &#1086;&#1090;&#1089;&#1091;&#1090;&#1089;&#1090;&#1074;&#1080;&#1103; &#1089;&#1086;&#1086;&#1073;&#1097;&#1077;&#1085;&#1080;&#1103; &#1086;&#1073; &#1086;&#1096;&#1080;&#1073;&#1082;&#1077; &#1074; &#1087;&#1088;&#1086;&#1094;&#1077;&#1089;&#1089;&#1077; &#1089;&#1086;&#1079;&#1076;&#1072;&#1085;&#1080;&#1103; &#1082;&#1091;&#1087;&#1086;&#1085;&#1072;-->
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyNotText</td>
+	<td>css=h4.alert-heading</td>
+	<td>Error</td>
+</tr>
+<!--&#1055;&#1088;&#1086;&#1074;&#1077;&#1088;&#1082;&#1072; &#1087;&#1088;&#1080;&#1089;&#1091;&#1090;&#1089;&#1090;&#1074;&#1080;&#1103; &#1090;&#1077;&#1082;&#1089;&#1090;&#1072; &#1074; &#1090;&#1072;&#1073;&#1083;&#1080;&#1094;&#1077;-->
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTable</td>
+	<td>//div[@id='content']//table.1.0</td>
+	<td>NewDiscountCouponGG</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertText</td>
+	<td>//div[@id='content']//table/tbody/tr/td</td>
+	<td>NewDiscountCouponGG</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult2">SearchCoupon.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">SearchCoupon</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/oc-panel/Coupon</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>css=h1</td>
+	<td>Coupon</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>css=div.form-group input[name='name']</td>
+	<td>NewDiscountCouponGG</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=button:contains('Search')</td>
+	<td></td>
+</tr>
+<!--&#1055;&#1088;&#1086;&#1074;&#1077;&#1088;&#1082;&#1072; &#1087;&#1088;&#1080;&#1089;&#1091;&#1090;&#1089;&#1090;&#1074;&#1080;&#1103; &#1085;&#1072;&#1080;&#1084;&#1077;&#1085;&#1086;&#1074;&#1072;&#1085;&#1080;&#1103; &#1082;&#1091;&#1087;&#1086;&#1085;&#1072;-->
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTable</td>
+	<td>css=div#content table.1.0</td>
+	<td>NewDiscountCouponGG</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult3">DeleteCoupon.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">DeleteCoupon</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/oc-panel/Coupon?name=NewDiscountCouponGG</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertElementPresent</td>
+	<td>css=i.glyphicon-trash</td>
+	<td>NewDiscountCouponGG</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=i.glyphicon-trash</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=div.sweet-alert.showSweetAlert.visible</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=div.showSweetAlert button.confirm</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForNotVisible</td>
+	<td>css=div.table-responsive &gt; table &gt; tbody &gt; tr</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<!--&#1055;&#1088;&#1086;&#1074;&#1077;&#1088;&#1082;&#1072; &#1086;&#1090;&#1089;&#1091;&#1090;&#1089;&#1090;&#1074;&#1080;&#1103; &#1085;&#1072;&#1080;&#1084;&#1077;&#1085;&#1086;&#1074;&#1072;&#1085;&#1080;&#1103; &#1082;&#1091;&#1087;&#1086;&#1085;&#1072; &#1074;  &#1103;&#1095;&#1077;&#1081;&#1082;&#1077; &#1090;&#1072;&#1073;&#1083;&#1080;&#1094;&#1099; -->
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertNotText</td>
+	<td>//div[2]/div[2]/div/div/table/tbody/tr/td</td>
+	<td>NewDiscountCouponGG</td>
+</tr>
+<!--&#1055;&#1088;&#1086;&#1074;&#1077;&#1088;&#1082;&#1072; &#1086;&#1090;&#1089;&#1091;&#1090;&#1089;&#1090;&#1074;&#1080;&#1103; &#1082;&#1085;&#1086;&#1087;&#1082;&#1080; &#1091;&#1076;&#1072;&#1083;&#1077;&#1085;&#1080;&#1103; &#1082;&#1091;&#1087;&#1086;&#1085;&#1072;-->
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertElementNotPresent</td>
+	<td>css=i.glyphicon-trash</td>
+	<td>NewDiscountCouponGG</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult4">LogoutCoupon.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">LogoutCoupon</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/oc-panel</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertText</td>
+	<td>//a[contains(@href, '#')]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>link=Logout</td>
+	<td>Logout</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>css=h1</td>
+	<td>Open eShop Demo</td>
+</tr>
+<!--&#1055;&#1088;&#1086;&#1074;&#1077;&#1088;&#1082;&#1072; &#1091;&#1089;&#1087;&#1077;&#1096;&#1085;&#1086;&#1075;&#1086; &#1074;&#1099;&#1093;&#1086;&#1076;&#1072; &#1080;&#1079; &#1087;&#1088;&#1080;&#1083;&#1086;&#1078;&#1077;&#1085;&#1080;&#1103;-->
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertText</td>
+	<td>id=mobile-menu-panel</td>
+	<td>Home Listing Search Contact</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr></table><pre>
+info: Starting test /selenium-server/tests/LoginCoupon.html
+info: Executing: |open | /oc-panel/auth/login/ |  |
+info: Executing: |waitForText | css=div.page-header &gt; h1 | Login |
+info: Executing: |type | css=section#page input[name=&apos;email&apos;] | demo@open-eshop.com |
+info: Executing: |type | css=section#page input[type=&apos;password&apos;] | demo |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | css=section#page button.btn-primary |  |
+info: Executing: |waitForText | id=mobile-menu-panel | Market Support Admin Support Assigned Stats Widgets Cache Cache Delete all Delete expired New Product Blog post FAQ Page 
+ Visit Site |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Starting test /selenium-server/tests/CreateNewCoupon.html
+info: Executing: |open | /oc-panel |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | css=span.glyphicon-th |  |
+info: Executing: |click | css=i.glyphicon-tag |  |
+info: Executing: |waitForElementPresent | css=i.glyphicon-pencil |  |
+info: Executing: |click | css=i.glyphicon-pencil |  |
+info: Executing: |waitForText | css=h1 | Create coupon |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |type | id=name | NewDiscountCouponGG |
+info: Executing: |type | id=discount_amount | 15 |
+info: Executing: |sendKeys | name=valid_date | 2018-03-31 |
+info: Executing: |type | id=number_coupons | 10 |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | name=submit |  |
+info: Executing: |waitForText | css=h1 | Coupon |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |assertText | css=h4.alert-heading | Success |
+info: Executing: |verifyNotText | css=h4.alert-heading | Error |
+info: Executing: |waitForTable | //div[@id=&apos;content&apos;]//table.1.0 | NewDiscountCouponGG |
+info: Executing: |assertText | //div[@id=&apos;content&apos;]//table/tbody/tr/td | NewDiscountCouponGG |
+info: Starting test /selenium-server/tests/SearchCoupon.html
+info: Executing: |open | /oc-panel/Coupon |  |
+info: Executing: |waitForText | css=h1 | Coupon |
+info: Executing: |type | css=div.form-group input[name=&apos;name&apos;] | NewDiscountCouponGG |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | css=button:contains(&apos;Search&apos;) |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |waitForTable | css=div#content table.1.0 | NewDiscountCouponGG |
+info: Starting test /selenium-server/tests/DeleteCoupon.html
+info: Executing: |open | /oc-panel/Coupon?name=NewDiscountCouponGG |  |
+info: Executing: |assertElementPresent | css=i.glyphicon-trash | NewDiscountCouponGG |
+info: Executing: |pause | 500 |  |
+info: Executing: |click | css=i.glyphicon-trash |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |waitForElementPresent | css=div.sweet-alert.showSweetAlert.visible |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | css=div.showSweetAlert button.confirm |  |
+info: Executing: |waitForNotVisible | css=div.table-responsive &gt; table &gt; tbody &gt; tr |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |refreshAndWait |  |  |
+info: Executing: |assertNotText | //div[2]/div[2]/div/div/table/tbody/tr/td | NewDiscountCouponGG |
+info: Executing: |assertElementNotPresent | css=i.glyphicon-trash | NewDiscountCouponGG |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Starting test /selenium-server/tests/LogoutCoupon.html
+info: Executing: |open | /oc-panel |  |
+info: Executing: |assertText | //a[contains(@href, &apos;#&apos;)] |  |
+info: Executing: |waitForText | link=Logout | Logout |
+info: Executing: |click | link=Logout |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |waitForText | css=h1 | Open eShop Demo |
+info: Executing: |assertText | id=mobile-menu-panel | Home Listing Search Contact |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+</pre></body></html>
